@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sewa Mobil ABC</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Sewa Mobil ABC</h1>
+
+  <form id="form-sewa">
+    <div class="mobil-list">
+
+      <div class="mobil">
+        <img src="Media/Avanza.jpg" alt="Toyota Avanza" />
+        <h3>Toyota Avanza</h3>
+        <p>Rp 500.000 / hari</p>
+        <div class="input-container">
+        <label><input type="checkbox" data-harga="500000" /> Pilih Mobil</label>
+        <input type="date" class="tanggal-sewa" />
+        <input type="number" class="durasi-sewa" placeholder="Durasi (hari)" min="1" />
+        </div>
+      </div>
+
+    <div class="mobil">
+        <img src="./Media/Innova.jpeg" alt="Toyota Kijang Innova" />
+        <h3>Toyota Kijang Innova</h3>
+        <p>Rp 700.000 / hari</p>
+        <div class="input-container">
+            <label><input type="checkbox" data-harga="700000" /> Pilih Mobil</label>
+            <input type="date" class="tanggal-sewa" />
+            <input type="number" class="durasi-sewa" placeholder="Durasi (hari)" min="1" />
+        </div>
+    </div>
+
+
+      <div class="mobil">
+        <img src="./Media/HRV.jpg" alt="Honda HRV" />
+        <h3>Honda HRV</h3>
+        <p>Rp 600.000 / hari</p>
+        <div class="input-container">
+        <label><input type="checkbox" data-harga="600000" /> Pilih Mobil</label>
+        <input type="date" class="tanggal-sewa" />
+        <input type="number" class="durasi-sewa" placeholder="Durasi (hari)" min="1" />
+        </div>
+      </div>
+
+      <div class="mobil">
+        <img src="./Media/Sigra.png" alt="Daihatsu Sigra" />
+        <h3>Daihatsu Sigra</h3>
+        <p>Rp 450.000 / hari</p>
+        <div class="input-container">
+        <label><input type="checkbox" data-harga="450000" /> Pilih Mobil</label>
+        <input type="date" class="tanggal-sewa" />
+        <input type="number" class="durasi-sewa" placeholder="Durasi (hari)" min="1" />
+        </div>
+      </div>
+
+    </div>
+
+    <div class="pelanggan">
+      <label>Nama Pelanggan:</label>
+      <input type="text" id="namaPelanggan" required />
+      <button type="button" onclick="hitungTotal()">Hitung Total</button>
+      <button type="button" onclick="simpanPemesanan()">Simpan Pemesanan</button>
+    </div>
+  </form>
+
+  <div id="ringkasan"></div>
+
+  <h2>Daftar Pemesanan</h2>
+  <div id="daftarPemesanan"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
